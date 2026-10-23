@@ -1,0 +1,44 @@
+
+#==========================- Selecting the beam -=========================
+/run/numberOfThreads 1
+
+#==========================- World properties -=========================
+/worldBox/worldMaterial mat_Vacuum
+
+#==========================- Target properties -=========================
+/target/targetMaterial G4_lH2 
+/target/targetThickness 2 mm
+
+#==========================- Selecting the beam physics-=========================
+/physics/selectPhysics BIC_AllHP  #BIC BIC_AllHP QMD INCL
+/physics/li7DataDirectory ../data/GenericIon
+
+/target/useStepLimit true
+/target/setMaxStep 1 um
+
+/process/em/verbose 1
+
+#==========================- Initialize -=========================
+/run/initialize
+/process/had/particle_hp/do_not_adjust_final_state true
+
+#==========================- Selecting the beam -=========================
+#/gps/source/list
+
+####### Setting the ion ###
+#/gps/ion 3 7 0   #used for firing default GenericIon Li7, not G4Li7Ion
+
+/gps/particle G4Li7Ion
+
+/gps/pos/type Beam
+/gps/pos/shape Circle
+/gps/pos/centre 0 0 -16 cm
+/gps/direction 0 0 1
+/gps/ene/mono 15 MeV
+
+#==========================- Visualisation -=========================
+
+#/control/execute visu.mac   #uncomment for visualisation
+
+#==========================- Running the beam -=========================
+/run/beamOn 1000
