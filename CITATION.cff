@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it."
+type: software
+
+title: "Geant4 ParticleHP-based Inverse-Kinematics Implementation"
+
+authors:
+  - family-names: MacLeod
+    given-names: Sherryn
+
+repository-code: "https://github.com/SherrynMac/geant4-particlehp-inverse-kinematics"
+
+version: 1.0.0
+date-released: 2026-10-24
