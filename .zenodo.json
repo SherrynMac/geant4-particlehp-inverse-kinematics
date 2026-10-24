@@ -1,0 +1,28 @@
+{
+  "title": "Geant4 ParticleHP-based Inverse-Kinematics Implementation",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "MacLeod, Sherryn",
+      "affiliation": "Centre for Medical Radiation Physics, University of Wollongong; Australian Nuclear Science and Technology Organisation (ANSTO)"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Eliyahu, Ilan",
+      "affiliation": "Centre for Medical Radiation Physics, University of Wollongong; Soreq Nuclear Research Center",
+      "type": "Researcher"
+    },
+    {
+      "name": "Safavi-Naeini, Mitra",
+      "affiliation": "Australian Nuclear Science and Technology Organisation (ANSTO)",
+      "type": "Supervisor"
+    },
+    {
+      "name": "Guatelli, Susanna",
+      "affiliation": "Centre for Medical Radiation Physics, University of Wollongong",
+      "type": "Supervisor"
+    }
+  ],
+  "license": "mit"
+}
